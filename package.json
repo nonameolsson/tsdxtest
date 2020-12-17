@@ -22,7 +22,7 @@
     "lint:fix": "tsdx lint --fix",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json|md)\"",
     "size": "size-limit",
     "storybook": "start-storybook -p 6006",
     "validate": "npm-run-all --parallel check-types check-format lint build"
@@ -32,7 +32,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn check-types && lint-staged"
+      "pre-commit": "yarn check-types && lint-staged",
+      "pre-push": "yarn validate"
     }
   },
   "prettier": {
