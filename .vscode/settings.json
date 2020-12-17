@@ -1,6 +1,6 @@
 {
   // Formatting
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "eslint.codeActionsOnSave.mode": "all",
   "eslint.format.enable": true,
 

@@ -1,10 +1,10 @@
 module.exports = {
+  plugins: ['react', 'prettier', 'react-hooks', 'react-perf', 'markdown'],
   extends: [
     'react-app',
     'plugin:react-perf/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['react', 'react-hooks', 'react-perf'],
   settings: {
     react: {
       version: 'detect',
