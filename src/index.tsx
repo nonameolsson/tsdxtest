@@ -5,15 +5,15 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
   children?: ReactChild;
 }
 
-console.log('hejsan');
-
 // Please do not use types off of a default export module or else Storybook Docs will suffer.
 // see: https://github.com/storybookjs/storybook/issues/9556
 /**
  * A custom Thing component. Neat!
  */
 export const Thing: FC<Props> = ({ children }) => {
-  const herp = () => true;
+  function herp() {
+    return true;
+  }
 
   return (
     <div onClick={herp}>
