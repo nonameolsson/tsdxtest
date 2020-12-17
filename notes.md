@@ -5,7 +5,7 @@ console.log(')
 - `check-format`: Format code with Prettier and list only changed files
 - `check-types`: Validates TypeScript types
 - `format`: Format all code with Prettier
-- `lint`: Lint code with ESlint (with TSDX configuration merged with our own custom configuration)
+- `lint`: https://tsdx.io/api-reference#code-tsdx-lint-code
 - `prettier`: Format code with Prettier and list both changed and un-changed files
 - `validate`: Run multiple scripts in parallell to make sure everything is ok
 
