@@ -1,7 +1,8 @@
 module.exports = {
-  plugins: ['react', 'prettier', 'react-hooks', 'react-perf', 'markdown'],
+  plugins: ['react', 'prettier', 'react-hooks', 'react-perf'],
   extends: [
     'react-app',
+    'plugin:react/recommended',
     'plugin:react-perf/recommended',
     'plugin:prettier/recommended',
   ],
@@ -12,5 +13,8 @@ module.exports = {
   },
   rules: {
     'no-console': 'error',
+    'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': "error",
+    'react-hooks/exhaustive-deps': "warn"
   },
 };
