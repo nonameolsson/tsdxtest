@@ -13,5 +13,11 @@ console.log('hej');
  * A custom Thing component. Neat!
  */
 export const Thing: FC<Props> = ({ children }) => {
-  return <div>{children || `the snozzberries taste like snozzberries`}</div>;
+  const herp = () => true;
+
+  return (
+    <div onClick={herp}>
+      {children || `the snozzberries taste like snozzberries`}
+    </div>
+  );
 };
